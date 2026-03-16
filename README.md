@@ -56,13 +56,8 @@ source install/setup.bash
 
 ## Run
 
-### 1) RViz (no simulation)
 
-```bash
-ros2 launch agriedge display.launch.py
-```
-
-### 2) Full New Gazebo simulation
+### Full New Gazebo simulation
 
 ```bash
 ros2 launch agriedge sim.launch.py
