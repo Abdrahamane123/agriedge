@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="robot_urdf">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.00417095121956512 -0.00241531123159877 0.36100669257767"
+        rpy="0 0 0" />
+      <mass
+        value="61.9383310823044" />
+      <inertia
+        ixx="1.70206796007567"
+        ixy="-0.000185653679970753"
+        ixz="9.97505947807799E-06"
+        iyy="6.09198512654387"
+        iyz="0.000104721803753137"
+        izz="7.57598084133915" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_urdf/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.894117647058823 0.913725490196078 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_urdf/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="AV_D_Link">
+    <inertial>
+      <origin
+        xyz="-2.66453525910038E-15 -7.21644966006352E-16 -0.0488079901212786"
+        rpy="0 0 0" />
+      <mass
+        value="10.657855405027" />
+      <inertia
+        ixx="0.105613457614365"
+        ixy="-1.9937953784503E-17"
+        ixz="-1.97944099945627E-16"
+        iyy="0.105613457614365"
+        iyz="-3.17412879252657E-17"
+        izz="0.196462639195501" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_urdf/meshes/AV_D_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_urdf/meshes/AV_D_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="AV_D_joint"
+    type="continuous">
+    <origin
+      xyz="0.308 -0.36674 -0.017"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="AV_D_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="AR_D_Link">
+    <inertial>
+      <origin
+        xyz="0 5.55111512312578E-17 -0.0437387693299911"
+        rpy="0 0 0" />
+      <mass
+        value="10.657855405027" />
+      <inertia
+        ixx="0.105613457614365"
+        ixy="-4.88093222292344E-19"
+        ixz="-1.36923763684909E-16"
+        iyy="0.105613457614365"
+        iyz="-8.1742349778627E-17"
+        izz="0.196462639195501" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_urdf/meshes/AR_D_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_urdf/meshes/AR_D_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="AR_D_joint"
+    type="continuous">
+    <origin
+      xyz="-0.308 -0.36167 -0.017"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="AR_D_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="AV_G_Link">
+    <inertial>
+      <origin
+        xyz="0 -1.66533453693773E-16 0.0488079901212815"
+        rpy="0 0 0" />
+      <mass
+        value="10.657855405027" />
+      <inertia
+        ixx="0.105613457614365"
+        ixy="-5.59617042711752E-18"
+        ixz="-6.82317980604428E-18"
+        iyy="0.105613457614365"
+        iyz="-2.22852761344364E-16"
+        izz="0.196462639195501" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_urdf/meshes/AV_G_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_urdf/meshes/AV_G_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="AV_G_joint"
+    type="continuous">
+    <origin
+      xyz="0.308000000000012 0.366737835643882 -0.0170000000000005"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="AV_G_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="AR_G_Link">
+    <inertial>
+      <origin
+        xyz="0 -5.55111512312578E-17 0.0488079901212819"
+        rpy="0 0 0" />
+      <mass
+        value="10.657855405027" />
+      <inertia
+        ixx="0.105613457614365"
+        ixy="-3.29449071720413E-19"
+        ixz="-4.63597471896205E-18"
+        iyy="0.105613457614365"
+        iyz="-1.77088881526179E-16"
+        izz="0.196462639195501" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_urdf/meshes/AR_G_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_urdf/meshes/AR_G_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="AR_G_joint"
+    type="continuous">
+    <origin
+      xyz="-0.307999999999992 0.366737835643881 -0.0170000000000008"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="AR_G_Link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="lidar_Link">
+    <inertial>
+      <origin
+        xyz="0.000159186781974352 5.07986041275998E-06 -0.043469487577298"
+        rpy="0 0 0" />
+      <mass
+        value="0.177860600944542" />
+      <inertia
+        ixx="5.58086482133709E-05"
+        ixy="1.41429394666722E-08"
+        ixz="-3.07876346138148E-07"
+        iyy="5.92691922016033E-05"
+        iyz="5.57295928405338E-12"
+        izz="9.5466399844112E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_urdf/meshes/lidar_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_urdf/meshes/lidar_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lidar_joint"
+    type="fixed">
+    <origin
+      xyz="0.585000000000027 0 0.7649029"
+      rpy="-3.14159265358979 0 -3.14159265358979" />
+    <parent
+      link="base_link" />
+    <child
+      link="lidar_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cam_Link">
+    <inertial>
+      <origin
+        xyz="-0.0226158939855332 -0.022618989029416 -0.0012379327837766"
+        rpy="0 0 0" />
+      <mass
+        value="0.095298987254699" />
+      <inertia
+        ixx="2.07983015136016E-05"
+        ixy="8.38026993965303E-07"
+        ixz="2.10534496019227E-07"
+        iyy="2.63066776224361E-05"
+        iyz="1.41516164232413E-07"
+        izz="1.49132584322726E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_urdf/meshes/cam_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_urdf/meshes/cam_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cam_joint"
+    type="fixed">
+    <origin
+      xyz="0.60871 -0.0012978 0.92609"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="cam_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="camnav_Link">
+    <inertial>
+      <origin
+        xyz="-0.00925372526693868 -5.95715081210813E-05 -0.0117421367150996"
+        rpy="0 0 0" />
+      <mass
+        value="0.0455021307700257" />
+      <inertia
+        ixx="2.73736522546793E-05"
+        ixy="-5.95992913918624E-10"
+        ixz="-2.33494573713122E-07"
+        iyy="2.75337121147786E-05"
+        iyz="2.75014303692742E-09"
+        izz="4.09798843901291E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_urdf/meshes/camnav_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_urdf/meshes/camnav_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="camnav_joint"
+    type="fixed">
+    <origin
+      xyz="0.652 -0.0115 0.5535"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="camnav_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
